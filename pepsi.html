@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi</title>
+    <style>
+        body{
+            color: white;
+            background-color: blue;
+        }
+    .pepsi{
+                height: 100px;
+                weight: 100px;
+        }
+        .container{
+            display: flex;
+            height: 200px;
+        }
+       .ul{
+           margin: 753px;
+           margin-top: 10px;
+           display: flex;
+           
+       }
+      .li{
+          color: white;
+          padding: 12px;
+          display: inline-block;
+      }
+      .span1{
+          font-size:100px;
+        
+      }
+      .para{
+          display: flex;
+          margin-left: 50px;
+      }
+      .slide{
+          max-width: 800px;
+      }
+      .newpepsi{
+          margin-left: 266px;
+      }
+      .span{
+          color: black;
+          border: 2px solid white;
+          border-radius: 97px;
+          background-color: white;
+      }
+      .logo1{
+          height: 25px;
+          weight: 25px;
+         padding: 6px;
+      }
+      .space{
+          height: 40px;
+          weight: 40px;
+          margin: 8px;
+          cursor: pointer;
+      }
+      /* .logo2{
+          margin-right: 56px;
+      } */
+      .space:hover{
+          transform: translateY(-6px)
+      }
+      .all{
+          margin-left: 550px
+      }
+      /* .gayab1{
+          display: none;
+      } */
+      .gayab2{
+          display: none;
+          /* margin-right: 45px; */
+      }
+      .gayab3{
+          display: none;
+      }
+     
+     
+</style>
+</head>
+<body>
+    <div class="container">
+        <img src="peps1i-removebg-preview.png" alt="" class="pepsi">
+        <ul class="ul">
+           <a href="#"><li class="li">Home</li></a>
+           <a href="#"><li class="li">About</li></a>
+           <a href="#"><li class="li">Products</li></a>
+           <a href="#"><li class="li">New</li></a>
+           <a href="#"><li class="li">Contect</li></a> 
+        </ul>
+    </div>
+    <div class="para">
+        <div class="slide">
+    <H1 class="that">THAT'S WHAT<br><span class="span1">I LIKE</span></H1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, laboriosam totam blanditiis perferendis similique reprehenderit consequatur atque itaque dolores ex natus repellendus repellat iste aliquid odit aspernatur, dolorum enim architecto beatae porro tenetur sunt consequuntur debitis ratione! Cupiditate error eius corrupti, rerum alias dolores laborum?</p><br>
+    <span class="span">VIEW ALL PRODUCT</span>
+</div>
+  <div class="newpepsi">
+      <img src="sprite1-removebg-preview.png" alt="" class="gayab1">
+      <img src="coc1-removebg-preview.png" alt="" class="gayab2">
+      <img src="fanta1-removebg-preview.png" alt="" class="gayab3">
+  </div>
+  <ul type="none">
+      <li><img src="facebook1-removebg-preview.png" alt="" class="logo1"></li>
+      <li><img src="twiter1-removebg-preview.png" alt="" class="logo1 logo2"></li>
+      <li><img src="instagram1-removebg-preview.png" alt="" class="logo1"></li>
+  </ul>
+</div><br>
+<div class="all">
+   <img src="sprite1-removebg-preview.png" alt="" onclick="togglehide1()" class="space">
+     <img src="coc1-removebg-preview.png" alt=""onclick="togglehide2()"  class="space">
+     <img src="fanta1-removebg-preview.png" alt="" onclick="togglehide3()" class="space">
+</div>
+<script>
+    function togglehide1(){
+    // //  let logos1=document.getElementsByClassName('gayab1')  
+    // //  let spaces1=document.getElementsByClassName('space') 
+    // //  let logos2=document.getElementsByClassName('gayab2')  
+    // //  let logos3=document.getElementsByClassName('gayab3')  
+
+    // logos1.style.display='block';
+    document.querySelector('.gayab1').style.display='block';
+    document.querySelector('.gayab2').style.display='none';
+    document.querySelector('.gayab3').style.display='none';  
+
+    document.body.style.backgroundColor='green'  
+            
+    }
+    function togglehide2(){
+    //     let logos1=document.getElementsByClassName('gayab1')  
+    //  let spaces2=document.getElementsByClassName('space') 
+    //  let logos2=document.getElementsByClassName('gayab2')  
+    //  let logos3=document.getElementsByClassName('gayab3')  
+
+         document.querySelector('.gayab1').style.display='none';
+         document.querySelector('.gayab2').style.display='block';
+         document.querySelector('.gayab3').style.display='none';
+
+         document.body.style.backgroundColor='red' 
+    
+    }
+    function togglehide3(){
+    // let logos1=document.getElementsByClassName('gayab1')  
+    //  let spaces3=document.getElementsByClassName('space') 
+    //  let logos2=document.getElementsByClassName('gayab2')  
+    //  let logos3=document.getElementsByClassName('gayab3')  
+
+         document.querySelector('.gayab1').style.display='none';
+         document.querySelector('.gayab2').style.display='none';
+         document.querySelector('.gayab3').style.display='block';
+
+         document.body.style.backgroundColor='yellow'     
+    }
+</script>
+
+</body>
+</html>
